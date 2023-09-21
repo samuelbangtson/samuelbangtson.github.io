@@ -1,0 +1,64 @@
+table {
+border: 5px solid black;
+}
+th {
+border: 1px solid black;
+padding: 5px;
+}
+td {
+border: 1px solid black;
+padding: 5px;
+rowspan: 2;
+contenteditable: true;
+}
+ul {
+line-height: 200%;
+}
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Georgia;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.33%;
+  font-family: Georgia;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+.center {
+  margin: auto;
+  width: 30%;
+  border: 3px solid white;
+  padding: 10px;
+}
+
+#Projects {
+background-color: lightblue;
+/* background-image: url("images/wavyBackground.jpg");
+background-attatchment: fixed;
+background-size: cover; */
+}
+#AboutMe {background-color: #FF7F7F;}
+#Random {background-color: lightgreen;}

@@ -2,13 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Samuel Bangtson's Website</title>
+    <title>Sam Bangtson's Website</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body style="background-color:MediumSeaGreen;">
+<body>
+<!--TabLinks-->
+<div class="tab">
+    <button class="tablink" onclick="openPage('Projects', this, 'lightblue')" id="defaultOpen">Projects</button>
+    <button class="tablink" onclick="openPage('AboutMe', this, '#FF7F7F')">About Me</button>
+    <button class="tablink" onclick="openPage('Random', this, 'lightgreen')">Random</button>
+</div>
 
-<h1>My Website</h1>
+<div id="Projects" class="tabcontent">
+    <!--<img src="images/project.jpg" alt="Projects" style="width:100%; height:200px;">-->
+    <h1 style="text-align:center;">My projects</h1>
+    <div class="center">
+    <ul>
+        <li><a href="index.html"> Example Link </a></li>
+        <li><a href="index.html"> Example Link </a></li>
+        <li><a href="index.html"> Example Link </a></li>
+        <li><a href="index.html"> Example Link </a></li>
+    </ul>
+    </div>
 
+</div>
 
+<div id="AboutMe" class="tabcontent">
+    <table>
+        <tr>
+            <th>Project</th>
+            <th> Description </th>
+            <th colspan="3">The Plan</th>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+    </table>
+</div>
+
+<div id="Random" class="tabcontent">
+    <h1>Random</h1>
+    <p>For testing things out I suppose</p>
+
+    <h3>Table</h3>
+
+    <table>
+        <tr>
+            <th>Column1</th>
+            <th>Column2</th>
+            <th colspan="2">Column3&4</th>
+        </tr>
+        <tr>
+            <td>Some table data</td>
+            <td colspan="3">The rest of the data</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h3>Things to do:</h3>
+    <ul style="list-style-type:square;">
+        <li>Calculator App</li>
+        <li>To do list</li>
+    </ul>
+</div>
 </body>
 </html>
